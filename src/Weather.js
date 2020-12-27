@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
+import FormatDate from "./FormatDate";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -14,7 +15,7 @@ export default function Weather(props) {
         humidity: response.data.main.humidity,
         description: response.data.weather[0].description,
         iconUrl: "http://openweathermap.org/img/wn/03d@2x.png",
-        date: "Wednesday 07:00"
+        date: new Date(response.data.dt * 1000)
         });
     }
     if (weatherData.ready) {
@@ -44,7 +45,7 @@ export default function Weather(props) {
             <i className="fas fa-tree"></i>
             <i className="fas fa-tree"></i>
           </li>
-              <li>{weatherData.date}</li>
+              <li><FormatDate date={weatherData.date} /></li>
               <li className="text-capitalize">{weatherData.description}</li>
           </ul>
         <div className="row">
