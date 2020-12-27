@@ -46,6 +46,6 @@
   position: relative;
   top: -25px;
 }
-.Weather .clearfix img {
-  margin-right: 20px;
+.Weather .clearfix canvas {
+  margin-right: 15px;
 }
