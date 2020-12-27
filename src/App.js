@@ -9,7 +9,7 @@ export default function App() {
     <Weather />
     <footer>
       Open-sourced code created by Effie Fletcher{" "}
-    <a href="https://github.com/whatthaeffie/react-final-project" target="_blank"> available on Github </a>
+    <a href="https://github.com/whatthaeffie/react-final-project"> available on Github </a>
     </footer>
     </div>
     </div>
