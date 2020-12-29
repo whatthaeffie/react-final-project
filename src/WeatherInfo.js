@@ -2,6 +2,7 @@ import React from "react";
 import FormatDate from "./FormatDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemp from "./WeatherTemp";
+import Tree from './icons/Tree.svg';
 
 export default function WeatherInfo(props) {
     return (
@@ -9,10 +10,22 @@ export default function WeatherInfo(props) {
            <h1>{props.data.city}</h1>
         <ul>
           <li>
-            <i class="fas fa-tree"></i>
-            <i class="fas fa-tree"></i>
-            <i className="fas fa-tree"></i>
-            <i className="fas fa-tree"></i>
+              <div className="trees">
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           <img src={Tree} alt="icon" />
+           </div>
           </li>
               <li><FormatDate date={props.data.date} /></li>
               <li className="text-capitalize">{props.data.description}</li>

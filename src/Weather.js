@@ -42,7 +42,7 @@ function search() {
             <div className="col-9">
               <input
                 type="search"
-                placeholder="Which city do you want to visit?"
+                placeholder="Which city are you visiting for the holidays?"
                 className="form-control"
                 autoFocus="on"
                 autocomplete="off"
